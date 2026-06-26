@@ -17,6 +17,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="d-flex flex-column min-vh-100">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-content text-center">
+            <h2 class="display-4 fw-bolder text-white mb-3 loader-text">Rajesh<span class="text-accent">.</span></h2>
+            <div class="loader-bar-container">
+                <div class="loader-bar"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress-bar" class="scroll-progress-bar"></div>
+    
+    <!-- Floating Particles Background -->
+    <div id="particles-container" class="particles-container"></div>
     
     <!-- Navbar -->
     <nav id="navbar" class="navbar navbar-expand-lg fixed-top glass-nav">
@@ -25,6 +39,20 @@
             <button class="navbar-toggler border-0 shadow-none text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <i class="fas fa-bars fs-4"></i>
             </button>
+            <button id="theme-toggle" class="btn btn-sm glass-btn ms-3" title="Toggle Dark/Light Mode">
+                <i class="fas fa-moon"></i>
+            </button>
+                        <div class="color-picker dropdown ms-2">
+                <button class="btn btn-sm glass-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" title="Change Theme Color">
+                    <i class="fas fa-palette"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end glass-card p-2 color-options" style="min-width: 80px;">
+                    <li class="mb-1"><button class="dropdown-item color-btn active rounded" data-color="purple" style="background: #7c3aed; height: 30px;" title="Purple"></button></li>
+                    <li class="mb-1"><button class="dropdown-item color-btn rounded" data-color="blue" style="background: #0284c7; height: 30px;" title="Blue"></button></li>
+                    <li class="mb-1"><button class="dropdown-item color-btn rounded" data-color="emerald" style="background: #10b981; height: 30px;" title="Emerald"></button></li>
+                    <li><button class="dropdown-item color-btn rounded" data-color="rose" style="background: #e11d48; height: 30px;" title="Rose"></button></li>
+                </ul>
+            </div>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto gap-2 fw-medium">
                     <li class="nav-item"><a class="nav-link nav-hover active" href="#home">Home</a></li>
@@ -48,7 +76,7 @@
         <div class="bg-shape-2"></div>
         <div class="container position-relative z-1">
             <div class="row align-items-center pt-5">
-                <div class="col-lg-8 col-xl-7 reveal-up">
+                <div class="col-lg-6 col-xl-6 reveal-up">
                     <div class="badge-glass mb-4 d-inline-flex align-items-center gap-2 px-3 py-2 rounded-pill mt-4">
                         <span class="status-dot blink"></span>
                         <span class="text-light fw-medium">Available for work</span>
@@ -75,6 +103,21 @@
                         </a>
                     </div>
                 </div>
+                <div class="col-lg-6 col-xl-6 reveal-right d-none d-lg-block">
+                    <div class="terminal-mockup glass-card rounded-4 overflow-hidden shadow-glow" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.2">
+                        <div class="terminal-header d-flex align-items-center px-3 py-2 border-bottom" style="border-color: var(--glass-border) !important; background: rgba(0,0,0,0.2);">
+                            <div class="terminal-dots d-flex gap-2">
+                                <span class="dot bg-danger rounded-circle" style="width:12px; height:12px;"></span>
+                                <span class="dot bg-warning rounded-circle" style="width:12px; height:12px;"></span>
+                                <span class="dot bg-success rounded-circle" style="width:12px; height:12px;"></span>
+                            </div>
+                            <div class="terminal-title mx-auto text-light opacity-75 small font-monospace">developer.php</div>
+                        </div>
+                        <div class="terminal-body p-4 font-monospace text-start" style="height: 320px; overflow-y: hidden; background: rgba(10, 14, 39, 0.8);">
+                            <pre class="m-0"><code id="terminal-typewriter" class="text-light" style="font-size: 0.9rem;"></code></pre>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -86,6 +129,16 @@
                 <span class="text-accent text-uppercase fw-bold tracking-widest small">Discover</span>
                 <h2 class="display-5 fw-bold text-white mt-2">About Me</h2>
                 <div class="title-line mx-auto mt-3"></div>
+            </div>
+            <div class="row justify-content-center mb-5 reveal-up">
+                <div class="col-12 text-center">
+                    <div class="glass-card d-inline-flex p-2 rounded-pill project-filters">
+                        <button class="btn btn-sm rounded-pill px-4 filter-btn active" data-filter="all">All</button>
+                        <button class="btn btn-sm rounded-pill px-4 filter-btn" data-filter="php">PHP / MVC</button>
+                        <button class="btn btn-sm rounded-pill px-4 filter-btn" data-filter="api">API</button>
+                        <button class="btn btn-sm rounded-pill px-4 filter-btn" data-filter="frontend">Frontend</button>
+                    </div>
+                </div>
             </div>
             <div class="row align-items-center g-5 mt-3">
                 <div class="col-lg-5 reveal-left">
@@ -138,11 +191,21 @@
                 <h2 class="display-5 fw-bold text-white mt-2">Technical Skills</h2>
                 <div class="title-line mx-auto mt-3"></div>
             </div>
+            <div class="row justify-content-center mb-5 reveal-up">
+                <div class="col-12 text-center">
+                    <div class="glass-card d-inline-flex p-2 rounded-pill project-filters">
+                        <button class="btn btn-sm rounded-pill px-4 filter-btn active" data-filter="all">All</button>
+                        <button class="btn btn-sm rounded-pill px-4 filter-btn" data-filter="php">PHP / MVC</button>
+                        <button class="btn btn-sm rounded-pill px-4 filter-btn" data-filter="api">API</button>
+                        <button class="btn btn-sm rounded-pill px-4 filter-btn" data-filter="frontend">Frontend</button>
+                    </div>
+                </div>
+            </div>
 
             <div class="row g-4 mt-4">
                 <!-- Backend Skills -->
                 <div class="col-lg-4 col-md-6 reveal-up" style="transition-delay: 100ms;">
-                    <div class="glass-card h-100 p-4 rounded-4 skill-card">
+                    <div class="glass-card h-100 p-4 rounded-4 skill-card" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.1">
                         <div class="d-flex align-items-center gap-3 mb-4">
                             <div class="icon-box bg-gradient rounded-3 text-white fs-4">
                                 <i class="fas fa-server"></i>
@@ -192,7 +255,7 @@
 
                 <!-- Frontend Skills -->
                 <div class="col-lg-4 col-md-6 reveal-up" style="transition-delay: 200ms;">
-                    <div class="glass-card h-100 p-4 rounded-4 skill-card">
+                    <div class="glass-card h-100 p-4 rounded-4 skill-card" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.1">
                         <div class="d-flex align-items-center gap-3 mb-4">
                             <div class="icon-box bg-gradient rounded-3 text-white fs-4">
                                 <i class="fas fa-laptop-code"></i>
@@ -242,7 +305,7 @@
 
                 <!-- Tools -->
                 <div class="col-lg-4 col-md-12 reveal-up" style="transition-delay: 300ms;">
-                    <div class="glass-card h-100 p-4 rounded-4 skill-card">
+                    <div class="glass-card h-100 p-4 rounded-4 skill-card" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.1">
                         <div class="d-flex align-items-center gap-3 mb-4">
                             <div class="icon-box bg-gradient rounded-3 text-white fs-4">
                                 <i class="fas fa-tools"></i>
@@ -270,6 +333,16 @@
                 <span class="text-accent text-uppercase fw-bold tracking-widest small">Career Path</span>
                 <h2 class="display-5 fw-bold text-white mt-2">Experience</h2>
                 <div class="title-line mx-auto mt-3"></div>
+            </div>
+            <div class="row justify-content-center mb-5 reveal-up">
+                <div class="col-12 text-center">
+                    <div class="glass-card d-inline-flex p-2 rounded-pill project-filters">
+                        <button class="btn btn-sm rounded-pill px-4 filter-btn active" data-filter="all">All</button>
+                        <button class="btn btn-sm rounded-pill px-4 filter-btn" data-filter="php">PHP / MVC</button>
+                        <button class="btn btn-sm rounded-pill px-4 filter-btn" data-filter="api">API</button>
+                        <button class="btn btn-sm rounded-pill px-4 filter-btn" data-filter="frontend">Frontend</button>
+                    </div>
+                </div>
             </div>
 
             <div class="timeline-container position-relative py-4 max-w-lg mx-auto mt-4">
@@ -331,11 +404,20 @@
                 <h2 class="display-5 fw-bold text-white mt-2">Recent Projects</h2>
                 <div class="title-line mx-auto mt-3"></div>
             </div>
+            <div class="row justify-content-center mb-5 reveal-up">
+                <div class="col-12 text-center">
+                    <div class="glass-card d-inline-flex p-2 rounded-pill project-filters">
+                        <button class="btn btn-sm rounded-pill px-4 filter-btn active" data-filter="all">All</button>
+                        <button class="btn btn-sm rounded-pill px-4 filter-btn" data-filter="php">PHP / MVC</button>
+                        <button class="btn btn-sm rounded-pill px-4 filter-btn" data-filter="api">API</button>
+                        <button class="btn btn-sm rounded-pill px-4 filter-btn" data-filter="frontend">Frontend</button>
+                    </div>
+                </div>
+            </div>
 
             <div class="row g-4 mt-4">
                 <!-- Project 1 -->
-                <div class="col-lg-4 col-md-6 reveal-up" style="transition-delay: 100ms;">
-                    <div class="project-card glass-card rounded-4 overflow-hidden h-100">
+                <div class="col-lg-4 col-md-6 reveal-up project-item" data-category="php frontend"> <div class="project-card glass-card rounded-4 overflow-hidden h-100" data-tilt data-tilt-max="3" data-tilt-speed="400">
                         <div class="project-img-wrapper position-relative overflow-hidden">
                             <div class="project-overlay d-flex align-items-center justify-content-center">
                                 <a href="#" class="btn btn-light rounded-circle shadow-lg icon-btn"><i class="fas fa-link"></i></a>
@@ -356,8 +438,7 @@
                 </div>
 
                 <!-- Project 2 -->
-                <div class="col-lg-4 col-md-6 reveal-up" style="transition-delay: 200ms;">
-                    <div class="project-card glass-card rounded-4 overflow-hidden h-100">
+                <div class="col-lg-4 col-md-6 reveal-up project-item" data-category="api php"> <div class="project-card glass-card rounded-4 overflow-hidden h-100" data-tilt data-tilt-max="3" data-tilt-speed="400">
                         <div class="project-img-wrapper position-relative overflow-hidden">
                             <div class="project-overlay d-flex align-items-center justify-content-center">
                                 <a href="#" class="btn btn-light rounded-circle shadow-lg icon-btn"><i class="fas fa-link"></i></a>
@@ -378,8 +459,7 @@
                 </div>
 
                 <!-- Project 3 -->
-                <div class="col-lg-4 col-md-6 reveal-up" style="transition-delay: 300ms;">
-                    <div class="project-card glass-card rounded-4 overflow-hidden h-100">
+                <div class="col-lg-4 col-md-6 reveal-up project-item" data-category="php frontend"> <div class="project-card glass-card rounded-4 overflow-hidden h-100" data-tilt data-tilt-max="3" data-tilt-speed="400">
                         <div class="project-img-wrapper position-relative overflow-hidden">
                             <div class="project-overlay d-flex align-items-center justify-content-center">
                                 <a href="#" class="btn btn-light rounded-circle shadow-lg icon-btn"><i class="fas fa-link"></i></a>
@@ -400,8 +480,7 @@
                 </div>
 
                 <!-- Project 4 -->
-                <div class="col-lg-4 col-md-6 reveal-up" style="transition-delay: 100ms;">
-                    <div class="project-card glass-card rounded-4 overflow-hidden h-100">
+                <div class="col-lg-4 col-md-6 reveal-up project-item" data-category="php api"> <div class="project-card glass-card rounded-4 overflow-hidden h-100" data-tilt data-tilt-max="3" data-tilt-speed="400">
                         <div class="project-img-wrapper position-relative overflow-hidden">
                             <div class="project-overlay d-flex align-items-center justify-content-center">
                                 <a href="#" class="btn btn-light rounded-circle shadow-lg icon-btn"><i class="fas fa-link"></i></a>
@@ -421,8 +500,7 @@
                 </div>
 
                 <!-- Project 5 -->
-                <div class="col-lg-4 col-md-6 reveal-up" style="transition-delay: 200ms;">
-                    <div class="project-card glass-card rounded-4 overflow-hidden h-100">
+                <div class="col-lg-4 col-md-6 reveal-up project-item" data-category="php"> <div class="project-card glass-card rounded-4 overflow-hidden h-100" data-tilt data-tilt-max="3" data-tilt-speed="400">
                         <div class="project-img-wrapper position-relative overflow-hidden">
                             <div class="project-overlay d-flex align-items-center justify-content-center">
                                 <a href="#" class="btn btn-light rounded-circle shadow-lg icon-btn"><i class="fas fa-link"></i></a>
@@ -442,8 +520,7 @@
                 </div>
 
                 <!-- Project 6 -->
-                <div class="col-lg-4 col-md-6 reveal-up" style="transition-delay: 300ms;">
-                    <div class="project-card glass-card rounded-4 overflow-hidden h-100">
+                <div class="col-lg-4 col-md-6 reveal-up project-item" data-category="api php"> <div class="project-card glass-card rounded-4 overflow-hidden h-100" data-tilt data-tilt-max="3" data-tilt-speed="400">
                         <div class="project-img-wrapper position-relative overflow-hidden">
                             <div class="project-overlay d-flex align-items-center justify-content-center">
                                 <a href="#" class="btn btn-light rounded-circle shadow-lg icon-btn"><i class="fas fa-link"></i></a>
@@ -463,8 +540,7 @@
                 </div>
 
                 <!-- Project 7 -->
-                <div class="col-lg-4 col-md-6 reveal-up mx-auto" style="transition-delay: 100ms;">
-                    <div class="project-card glass-card rounded-4 overflow-hidden h-100">
+                <div class="col-lg-4 col-md-6 reveal-up project-item mx-auto" data-category="frontend php"> <div class="project-card glass-card rounded-4 overflow-hidden h-100" data-tilt data-tilt-max="3" data-tilt-speed="400">
                         <div class="project-img-wrapper position-relative overflow-hidden">
                             <div class="project-overlay d-flex align-items-center justify-content-center">
                                 <a href="#" class="btn btn-light rounded-circle shadow-lg icon-btn"><i class="fas fa-link"></i></a>
@@ -496,10 +572,20 @@
                 <h2 class="display-5 fw-bold text-white mt-2">Services</h2>
                 <div class="title-line mx-auto mt-3"></div>
             </div>
+            <div class="row justify-content-center mb-5 reveal-up">
+                <div class="col-12 text-center">
+                    <div class="glass-card d-inline-flex p-2 rounded-pill project-filters">
+                        <button class="btn btn-sm rounded-pill px-4 filter-btn active" data-filter="all">All</button>
+                        <button class="btn btn-sm rounded-pill px-4 filter-btn" data-filter="php">PHP / MVC</button>
+                        <button class="btn btn-sm rounded-pill px-4 filter-btn" data-filter="api">API</button>
+                        <button class="btn btn-sm rounded-pill px-4 filter-btn" data-filter="frontend">Frontend</button>
+                    </div>
+                </div>
+            </div>
 
             <div class="row g-4 justify-content-center mt-4">
                 <div class="col-lg-4 col-md-6 reveal-up" style="transition-delay: 100ms;">
-                    <div class="service-card glass-card p-5 rounded-4 h-100 text-center">
+                    <div class="service-card glass-card p-5 rounded-4 h-100 text-center" data-tilt data-tilt-max="5" data-tilt-speed="400">
                         <div class="service-icon bg-gradient text-white fs-2 mb-4 mx-auto d-flex align-items-center justify-content-center rounded-circle" style="width: 80px; height: 80px;">
                             <i class="fas fa-code"></i>
                         </div>
@@ -508,7 +594,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 reveal-up" style="transition-delay: 200ms;">
-                    <div class="service-card glass-card p-5 rounded-4 h-100 text-center">
+                    <div class="service-card glass-card p-5 rounded-4 h-100 text-center" data-tilt data-tilt-max="5" data-tilt-speed="400">
                         <div class="service-icon bg-gradient text-white fs-2 mb-4 mx-auto d-flex align-items-center justify-content-center rounded-circle" style="width: 80px; height: 80px;">
                             <i class="fas fa-network-wired"></i>
                         </div>
@@ -517,7 +603,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 reveal-up" style="transition-delay: 300ms;">
-                    <div class="service-card glass-card p-5 rounded-4 h-100 text-center">
+                    <div class="service-card glass-card p-5 rounded-4 h-100 text-center" data-tilt data-tilt-max="5" data-tilt-speed="400">
                         <div class="service-icon bg-gradient text-white fs-2 mb-4 mx-auto d-flex align-items-center justify-content-center rounded-circle" style="width: 80px; height: 80px;">
                             <i class="fas fa-desktop"></i>
                         </div>
@@ -526,7 +612,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 reveal-up" style="transition-delay: 400ms;">
-                    <div class="service-card glass-card p-5 rounded-4 h-100 text-center">
+                    <div class="service-card glass-card p-5 rounded-4 h-100 text-center" data-tilt data-tilt-max="5" data-tilt-speed="400">
                         <div class="service-icon bg-gradient text-white fs-2 mb-4 mx-auto d-flex align-items-center justify-content-center rounded-circle" style="width: 80px; height: 80px;">
                             <i class="fas fa-database"></i>
                         </div>
@@ -535,7 +621,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 reveal-up" style="transition-delay: 500ms;">
-                    <div class="service-card glass-card p-5 rounded-4 h-100 text-center">
+                    <div class="service-card glass-card p-5 rounded-4 h-100 text-center" data-tilt data-tilt-max="5" data-tilt-speed="400">
                         <div class="service-icon bg-gradient text-white fs-2 mb-4 mx-auto d-flex align-items-center justify-content-center rounded-circle" style="width: 80px; height: 80px;">
                             <i class="fas fa-tachometer-alt"></i>
                         </div>
@@ -555,6 +641,16 @@
                 <span class="text-accent text-uppercase fw-bold tracking-widest small">Get In Touch</span>
                 <h2 class="display-5 fw-bold text-white mt-2">Contact Me</h2>
                 <div class="title-line mx-auto mt-3"></div>
+            </div>
+            <div class="row justify-content-center mb-5 reveal-up">
+                <div class="col-12 text-center">
+                    <div class="glass-card d-inline-flex p-2 rounded-pill project-filters">
+                        <button class="btn btn-sm rounded-pill px-4 filter-btn active" data-filter="all">All</button>
+                        <button class="btn btn-sm rounded-pill px-4 filter-btn" data-filter="php">PHP / MVC</button>
+                        <button class="btn btn-sm rounded-pill px-4 filter-btn" data-filter="api">API</button>
+                        <button class="btn btn-sm rounded-pill px-4 filter-btn" data-filter="frontend">Frontend</button>
+                    </div>
+                </div>
             </div>
 
             <div class="row g-5 justify-content-center mt-4">
@@ -666,6 +762,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.css" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Custom JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
