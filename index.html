@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rajesh Jatapara - Premium PHP Developer Portfolio">
+    <title>Rajesh Jatapara | PHP Developer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+    
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top glass-nav">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-gradient fs-3" href="#home">Rajesh<span class="text-white">.</span></a>
+            <button class="navbar-toggler border-0 shadow-none text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars fs-4"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-2 fw-medium">
+                    <li class="nav-item"><a class="nav-link nav-hover active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link nav-hover" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link nav-hover" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link nav-hover" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link nav-hover" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link nav-hover" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link nav-hover" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Main Content Wrapper -->
+    <main class="flex-grow-1">
+
+    <!-- Hero Section -->
+    <section id="home" class="min-vh-100 d-flex align-items-center hero-section position-relative overflow-hidden mt-n5 pt-5">
+        <div class="bg-shape-1"></div>
+        <div class="bg-shape-2"></div>
+        <div class="container position-relative z-1">
+            <div class="row align-items-center pt-5">
+                <div class="col-lg-8 col-xl-7 reveal-up">
+                    <div class="badge-glass mb-4 d-inline-flex align-items-center gap-2 px-3 py-2 rounded-pill mt-4">
+                        <span class="status-dot blink"></span>
+                        <span class="text-light fw-medium">Available for work</span>
+                    </div>
+                    <h1 class="display-3 fw-bolder text-white mb-3">
+                        Hi, I'm <br>
+                        <span class="text-gradient">Rajesh Jatapara</span>
+                    </h1>
+                    <h2 class="fs-2 text-white-50 mb-4" style="min-height: 48px;">
+                        <span class="typed-text"></span><span class="cursor">&nbsp;</span>
+                    </h2>
+                    <p class="fs-5 text-light mb-5 max-w-lg opacity-75">
+                        I specialize in building scalable web applications, RESTful APIs, and complex backend architectures using PHP and modern frontend technologies. With 3+ years of experience crafting digital solutions.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#contact" class="btn btn-gradient px-4 py-3 rounded-pill fw-semibold">
+                            <i class="fas fa-paper-plane me-2"></i> Contact Me
+                        </a>
+                        <a href="#projects" class="btn btn-glass px-4 py-3 rounded-pill fw-semibold">
+                            <i class="fas fa-laptop-code me-2"></i> View Projects
+                        </a>
+                        <a href="resume.html" target="_blank" class="btn btn-glass px-4 py-3 rounded-pill fw-semibold">
+                            <i class="fas fa-download me-2"></i> Download Resume
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- About Section -->
+    <section id="about" class="py-6 section-padding">
+        <div class="container position-relative z-1">
+            <div class="section-title text-center mb-5 reveal-up">
+                <span class="text-accent text-uppercase fw-bold tracking-widest small">Discover</span>
+                <h2 class="display-5 fw-bold text-white mt-2">About Me</h2>
+                <div class="title-line mx-auto mt-3"></div>
+            </div>
+            <div class="row align-items-center g-5 mt-3">
+                <div class="col-lg-5 reveal-left">
+                    <div class="about-image-wrapper position-relative">
+                        <div class="image-backdrop"></div>
+                        <!-- Replace with your actual image path -->
+                        <img src="https://ui-avatars.com/api/?name=Rajesh+Jatapara&size=512&background=2563EB&color=fff" alt="Rajesh Jatapara" class="img-fluid rounded-4 shadow-lg position-relative z-1 about-img">
+                        <div class="experience-badge glass-card p-3 rounded-3 text-center position-absolute">
+                            <h3 class="fw-bold text-gradient mb-0">3+</h3>
+                            <span class="small text-light">Years Experience</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 reveal-right">
+                    <h3 class="fs-2 text-white fw-semibold mb-4">Crafting robust backend solutions with a passion for performance.</h3>
+                    <p class="text-light opacity-75 fs-5 mb-4">
+                        I am a dedicated PHP Developer with over 3 years of hands-on experience in designing, developing, and maintaining complex web applications. My expertise lies in creating efficient server-side logic, developing secure RESTful APIs, and integrating them with dynamic front-end interfaces.
+                    </p>
+                    <p class="text-light opacity-75 fs-5 mb-5">
+                        I thrive in solving complex problems and continuously learning new technologies to deliver high-quality, scalable, and user-centric software solutions that drive business value.
+                    </p>
+                    
+                    <div class="row g-4 mt-2">
+                        <div class="col-sm-6">
+                            <ul class="list-unstyled text-light mb-0 custom-list">
+                                <li class="mb-3 d-flex align-items-center gap-3"><i class="fas fa-check-circle text-accent"></i> Core & MVC Frameworks</li>
+                                <li class="mb-3 d-flex align-items-center gap-3"><i class="fas fa-check-circle text-accent"></i> Database Architecture</li>
+                                <li class="mb-3 d-flex align-items-center gap-3"><i class="fas fa-check-circle text-accent"></i> API Integration</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <ul class="list-unstyled text-light mb-0 custom-list">
+                                <li class="mb-3 d-flex align-items-center gap-3"><i class="fas fa-check-circle text-accent"></i> Clean Code Practices</li>
+                                <li class="mb-3 d-flex align-items-center gap-3"><i class="fas fa-check-circle text-accent"></i> Responsive UI Implementation</li>
+                                <li class="mb-3 d-flex align-items-center gap-3"><i class="fas fa-check-circle text-accent"></i> Performance Optimization</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Skills Section -->
+    <section id="skills" class="py-6 section-padding position-relative">
+        <div class="bg-shape-3"></div>
+        <div class="container position-relative z-1">
+            <div class="section-title text-center mb-5 reveal-up">
+                <span class="text-accent text-uppercase fw-bold tracking-widest small">My Toolkit</span>
+                <h2 class="display-5 fw-bold text-white mt-2">Technical Skills</h2>
+                <div class="title-line mx-auto mt-3"></div>
+            </div>
+
+            <div class="row g-4 mt-4">
+                <!-- Backend Skills -->
+                <div class="col-lg-4 col-md-6 reveal-up" style="transition-delay: 100ms;">
+                    <div class="glass-card h-100 p-4 rounded-4 skill-card">
+                        <div class="d-flex align-items-center gap-3 mb-4">
+                            <div class="icon-box bg-gradient rounded-3 text-white fs-4">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <h3 class="fs-4 fw-semibold text-white mb-0">Backend</h3>
+                        </div>
+                        <div class="skills-wrapper">
+                            <div class="skill-item mb-3">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span class="text-light fw-medium">Core PHP</span>
+                                    <span class="text-accent">95%</span>
+                                </div>
+                                <div class="progress" style="height: 6px;">
+                                    <div class="progress-bar bg-gradient" role="progressbar" data-width="95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item mb-3">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span class="text-light fw-medium">REST API</span>
+                                    <span class="text-accent">90%</span>
+                                </div>
+                                <div class="progress" style="height: 6px;">
+                                    <div class="progress-bar bg-gradient" role="progressbar" data-width="90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item mb-3">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span class="text-light fw-medium">MySQL</span>
+                                    <span class="text-accent">90%</span>
+                                </div>
+                                <div class="progress" style="height: 6px;">
+                                    <div class="progress-bar bg-gradient" role="progressbar" data-width="90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item mb-3">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span class="text-light fw-medium">cURL / OOP / MVC</span>
+                                    <span class="text-accent">85%</span>
+                                </div>
+                                <div class="progress" style="height: 6px;">
+                                    <div class="progress-bar bg-gradient" role="progressbar" data-width="85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frontend Skills -->
+                <div class="col-lg-4 col-md-6 reveal-up" style="transition-delay: 200ms;">
+                    <div class="glass-card h-100 p-4 rounded-4 skill-card">
+                        <div class="d-flex align-items-center gap-3 mb-4">
+                            <div class="icon-box bg-gradient rounded-3 text-white fs-4">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <h3 class="fs-4 fw-semibold text-white mb-0">Frontend</h3>
+                        </div>
+                        <div class="skills-wrapper">
+                            <div class="skill-item mb-3">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span class="text-light fw-medium">HTML5 & CSS3</span>
+                                    <span class="text-accent">90%</span>
+                                </div>
+                                <div class="progress" style="height: 6px;">
+                                    <div class="progress-bar bg-gradient" role="progressbar" data-width="90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item mb-3">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span class="text-light fw-medium">JavaScript</span>
+                                    <span class="text-accent">85%</span>
+                                </div>
+                                <div class="progress" style="height: 6px;">
+                                    <div class="progress-bar bg-gradient" role="progressbar" data-width="85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item mb-3">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span class="text-light fw-medium">jQuery & AJAX</span>
+                                    <span class="text-accent">85%</span>
+                                </div>
+                                <div class="progress" style="height: 6px;">
+                                    <div class="progress-bar bg-gradient" role="progressbar" data-width="85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item mb-3">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span class="text-light fw-medium">Bootstrap 5</span>
+                                    <span class="text-accent">90%</span>
+                                </div>
+                                <div class="progress" style="height: 6px;">
+                                    <div class="progress-bar bg-gradient" role="progressbar" data-width="90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="col-lg-4 col-md-12 reveal-up" style="transition-delay: 300ms;">
+                    <div class="glass-card h-100 p-4 rounded-4 skill-card">
+                        <div class="d-flex align-items-center gap-3 mb-4">
+                            <div class="icon-box bg-gradient rounded-3 text-white fs-4">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <h3 class="fs-4 fw-semibold text-white mb-0">Tools</h3>
+                        </div>
+                        <div class="tools-grid d-flex flex-wrap gap-3">
+                            <span class="badge glass-badge fw-medium py-2 px-3 fs-6"><i class="fab fa-git-alt me-2 text-accent"></i>Git</span>
+                            <span class="badge glass-badge fw-medium py-2 px-3 fs-6"><i class="fab fa-github me-2 text-accent"></i>GitHub</span>
+                            <span class="badge glass-badge fw-medium py-2 px-3 fs-6"><i class="fas fa-rocket me-2 text-accent"></i>Postman</span>
+                            <span class="badge glass-badge fw-medium py-2 px-3 fs-6"><i class="fas fa-box-open me-2 text-accent"></i>Composer</span>
+                            <span class="badge glass-badge fw-medium py-2 px-3 fs-6"><i class="fas fa-database me-2 text-accent"></i>phpMyAdmin</span>
+                            <span class="badge glass-badge fw-medium py-2 px-3 fs-6"><i class="fas fa-code me-2 text-accent"></i>VS Code</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Experience Timeline Section -->
+    <section id="experience" class="py-6 section-padding">
+        <div class="container">
+            <div class="section-title text-center mb-5 reveal-up">
+                <span class="text-accent text-uppercase fw-bold tracking-widest small">Career Path</span>
+                <h2 class="display-5 fw-bold text-white mt-2">Experience</h2>
+                <div class="title-line mx-auto mt-3"></div>
+            </div>
+
+            <div class="timeline-container position-relative py-4 max-w-lg mx-auto mt-4">
+                <div class="timeline-line"></div>
+                
+                <div class="timeline-item reveal-up">
+                    <div class="timeline-dot bg-gradient shadow-glow"></div>
+                    <div class="glass-card p-4 rounded-4 ms-4 ms-md-5">
+                        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-3">
+                            <h3 class="fs-4 fw-bold text-white mb-1 mb-md-0">PHP Developer</h3>
+                            <span class="badge bg-primary-subtle text-accent rounded-pill px-3 py-2 fw-medium fs-6"><i class="far fa-calendar-alt me-2"></i>August 2023 - Present</span>
+                        </div>
+                        <h4 class="fs-5 text-accent fw-medium mb-3"><i class="fas fa-building me-2"></i>Communities Heritage Limited</h4>
+                        <p class="text-light opacity-75 mb-0">
+                            Developing and maintaining robust web applications, optimizing database performance, and creating secure RESTful APIs. Collaborating with cross-functional teams to deliver high-quality software solutions and driving continuous improvement in the development lifecycle.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Statistics Section -->
+            <div class="statistics-section position-relative overflow-hidden mt-5 pt-5">
+                <div class="row g-4 text-center justify-content-center">
+                    <div class="col-6 col-md-3 reveal-up" style="transition-delay: 100ms;">
+                        <div class="stat-card glass-card p-4 rounded-4 h-100">
+                            <div class="fs-1 fw-bold text-gradient mb-2"><span class="counter" data-target="3">0</span>+</div>
+                            <p class="text-light fw-medium mb-0">Years Experience</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 reveal-up" style="transition-delay: 200ms;">
+                        <div class="stat-card glass-card p-4 rounded-4 h-100">
+                            <div class="fs-1 fw-bold text-gradient mb-2"><span class="counter" data-target="7">0</span>+</div>
+                            <p class="text-light fw-medium mb-0">Projects</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 reveal-up" style="transition-delay: 300ms;">
+                        <div class="stat-card glass-card p-4 rounded-4 h-100">
+                            <div class="fs-1 fw-bold text-gradient mb-2"><span class="counter" data-target="15">0</span>+</div>
+                            <p class="text-light fw-medium mb-0">Modules</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 reveal-up" style="transition-delay: 400ms;">
+                        <div class="stat-card glass-card p-4 rounded-4 h-100">
+                            <div class="fs-1 fw-bold text-gradient mb-2"><span class="counter" data-target="20">0</span>+</div>
+                            <p class="text-light fw-medium mb-0">APIs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Projects Section -->
+    <section id="projects" class="py-6 section-padding position-relative">
+        <div class="bg-shape-4"></div>
+        <div class="container position-relative z-1">
+            <div class="section-title text-center mb-5 reveal-up">
+                <span class="text-accent text-uppercase fw-bold tracking-widest small">Portfolio</span>
+                <h2 class="display-5 fw-bold text-white mt-2">Recent Projects</h2>
+                <div class="title-line mx-auto mt-3"></div>
+            </div>
+
+            <div class="row g-4 mt-4">
+                <!-- Project 1 -->
+                <div class="col-lg-4 col-md-6 reveal-up" style="transition-delay: 100ms;">
+                    <div class="project-card glass-card rounded-4 overflow-hidden h-100">
+                        <div class="project-img-wrapper position-relative overflow-hidden">
+                            <div class="project-overlay d-flex align-items-center justify-content-center">
+                                <a href="#" class="btn btn-light rounded-circle shadow-lg icon-btn"><i class="fas fa-link"></i></a>
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80" alt="Smart Society" class="img-fluid w-100 project-img">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="fs-4 fw-semibold text-white mb-2">Smart Society Management System</h3>
+                            <p class="text-light opacity-75 fs-6 mb-4">A comprehensive system to manage residential societies, including member management, maintenance tracking, and complaint resolution.</p>
+                            <div class="d-flex flex-wrap gap-2 mb-4">
+                                <span class="badge glass-badge text-accent fw-normal">PHP</span>
+                                <span class="badge glass-badge text-accent fw-normal">MySQL</span>
+                                <span class="badge glass-badge text-accent fw-normal">Bootstrap</span>
+                            </div>
+                            <a href="#" class="text-accent fw-medium text-decoration-none project-link">View Details <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="col-lg-4 col-md-6 reveal-up" style="transition-delay: 200ms;">
+                    <div class="project-card glass-card rounded-4 overflow-hidden h-100">
+                        <div class="project-img-wrapper position-relative overflow-hidden">
+                            <div class="project-overlay d-flex align-items-center justify-content-center">
+                                <a href="#" class="btn btn-light rounded-circle shadow-lg icon-btn"><i class="fas fa-link"></i></a>
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=600&q=80" alt="Association Management" class="img-fluid w-100 project-img">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="fs-4 fw-semibold text-white mb-2">Association Management System</h3>
+                            <p class="text-light opacity-75 fs-6 mb-4">Streamlined platform for managing associations, organizing events, handling memberships, and secure payment processing.</p>
+                            <div class="d-flex flex-wrap gap-2 mb-4">
+                                <span class="badge glass-badge text-accent fw-normal">REST API</span>
+                                <span class="badge glass-badge text-accent fw-normal">jQuery</span>
+                                <span class="badge glass-badge text-accent fw-normal">MVC</span>
+                            </div>
+                            <a href="#" class="text-accent fw-medium text-decoration-none project-link">View Details <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="col-lg-4 col-md-6 reveal-up" style="transition-delay: 300ms;">
+                    <div class="project-card glass-card rounded-4 overflow-hidden h-100">
+                        <div class="project-img-wrapper position-relative overflow-hidden">
+                            <div class="project-overlay d-flex align-items-center justify-content-center">
+                                <a href="#" class="btn btn-light rounded-circle shadow-lg icon-btn"><i class="fas fa-link"></i></a>
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&q=80" alt="Equipment Management" class="img-fluid w-100 project-img">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="fs-4 fw-semibold text-white mb-2">Equipment Management System</h3>
+                            <p class="text-light opacity-75 fs-6 mb-4">Inventory tracking solution for equipment lifecycle, maintenance schedules, and allocation for large enterprises.</p>
+                            <div class="d-flex flex-wrap gap-2 mb-4">
+                                <span class="badge glass-badge text-accent fw-normal">PHP</span>
+                                <span class="badge glass-badge text-accent fw-normal">MySQL</span>
+                                <span class="badge glass-badge text-accent fw-normal">AJAX</span>
+                            </div>
+                            <a href="#" class="text-accent fw-medium text-decoration-none project-link">View Details <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="col-lg-4 col-md-6 reveal-up" style="transition-delay: 100ms;">
+                    <div class="project-card glass-card rounded-4 overflow-hidden h-100">
+                        <div class="project-img-wrapper position-relative overflow-hidden">
+                            <div class="project-overlay d-flex align-items-center justify-content-center">
+                                <a href="#" class="btn btn-light rounded-circle shadow-lg icon-btn"><i class="fas fa-link"></i></a>
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=600&q=80" alt="HRMS" class="img-fluid w-100 project-img">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="fs-4 fw-semibold text-white mb-2">HRMS</h3>
+                            <p class="text-light opacity-75 fs-6 mb-4">Human Resource Management System covering attendance, payroll, leave management, and employee performance tracking.</p>
+                            <div class="d-flex flex-wrap gap-2 mb-4">
+                                <span class="badge glass-badge text-accent fw-normal">Core PHP</span>
+                                <span class="badge glass-badge text-accent fw-normal">API</span>
+                            </div>
+                            <a href="#" class="text-accent fw-medium text-decoration-none project-link">View Details <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="col-lg-4 col-md-6 reveal-up" style="transition-delay: 200ms;">
+                    <div class="project-card glass-card rounded-4 overflow-hidden h-100">
+                        <div class="project-img-wrapper position-relative overflow-hidden">
+                            <div class="project-overlay d-flex align-items-center justify-content-center">
+                                <a href="#" class="btn btn-light rounded-circle shadow-lg icon-btn"><i class="fas fa-link"></i></a>
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=600&q=80" alt="Recruitment" class="img-fluid w-100 project-img">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="fs-4 fw-semibold text-white mb-2">Recruitment Management System</h3>
+                            <p class="text-light opacity-75 fs-6 mb-4">End-to-end recruitment lifecycle tool handling job postings, applicant tracking, and automated interview scheduling.</p>
+                            <div class="d-flex flex-wrap gap-2 mb-4">
+                                <span class="badge glass-badge text-accent fw-normal">MVC</span>
+                                <span class="badge glass-badge text-accent fw-normal">MySQL</span>
+                            </div>
+                            <a href="#" class="text-accent fw-medium text-decoration-none project-link">View Details <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="col-lg-4 col-md-6 reveal-up" style="transition-delay: 300ms;">
+                    <div class="project-card glass-card rounded-4 overflow-hidden h-100">
+                        <div class="project-img-wrapper position-relative overflow-hidden">
+                            <div class="project-overlay d-flex align-items-center justify-content-center">
+                                <a href="#" class="btn btn-light rounded-circle shadow-lg icon-btn"><i class="fas fa-link"></i></a>
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1509391366360-128c575b5849?auto=format&fit=crop&w=600&q=80" alt="Solar PTW" class="img-fluid w-100 project-img">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="fs-4 fw-semibold text-white mb-2">Adani Solar PTW System</h3>
+                            <p class="text-light opacity-75 fs-6 mb-4">Permit to Work system designed for Adani Solar to enforce safety protocols and streamline the approval processes.</p>
+                            <div class="d-flex flex-wrap gap-2 mb-4">
+                                <span class="badge glass-badge text-accent fw-normal">PHP</span>
+                                <span class="badge glass-badge text-accent fw-normal">cURL</span>
+                            </div>
+                            <a href="#" class="text-accent fw-medium text-decoration-none project-link">View Details <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7 -->
+                <div class="col-lg-4 col-md-6 reveal-up mx-auto" style="transition-delay: 100ms;">
+                    <div class="project-card glass-card rounded-4 overflow-hidden h-100">
+                        <div class="project-img-wrapper position-relative overflow-hidden">
+                            <div class="project-overlay d-flex align-items-center justify-content-center">
+                                <a href="#" class="btn btn-light rounded-circle shadow-lg icon-btn"><i class="fas fa-link"></i></a>
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1493770348161-369560ae357d?auto=format&fit=crop&w=600&q=80" alt="Tiffin Order" class="img-fluid w-100 project-img">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="fs-4 fw-semibold text-white mb-2">Tiffin Order Management System</h3>
+                            <p class="text-light opacity-75 fs-6 mb-4">Food delivery and subscription management app for local tiffin providers with daily menu planning and billing.</p>
+                            <div class="d-flex flex-wrap gap-2 mb-4">
+                                <span class="badge glass-badge text-accent fw-normal">HTML/CSS</span>
+                                <span class="badge glass-badge text-accent fw-normal">PHP</span>
+                                <span class="badge glass-badge text-accent fw-normal">JS</span>
+                            </div>
+                            <a href="#" class="text-accent fw-medium text-decoration-none project-link">View Details <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+        <!-- Services Section -->
+    <section id="services" class="py-6 section-padding">
+        <div class="container">
+            <div class="section-title text-center mb-5 reveal-up">
+                <span class="text-accent text-uppercase fw-bold tracking-widest small">What I Do</span>
+                <h2 class="display-5 fw-bold text-white mt-2">Services</h2>
+                <div class="title-line mx-auto mt-3"></div>
+            </div>
+
+            <div class="row g-4 justify-content-center mt-4">
+                <div class="col-lg-4 col-md-6 reveal-up" style="transition-delay: 100ms;">
+                    <div class="service-card glass-card p-5 rounded-4 h-100 text-center">
+                        <div class="service-icon bg-gradient text-white fs-2 mb-4 mx-auto d-flex align-items-center justify-content-center rounded-circle" style="width: 80px; height: 80px;">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="fs-4 fw-semibold text-white mb-3">Web Development</h3>
+                        <p class="text-light opacity-75 mb-0">Building responsive, scalable, and high-performance web applications tailored to your business needs.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 reveal-up" style="transition-delay: 200ms;">
+                    <div class="service-card glass-card p-5 rounded-4 h-100 text-center">
+                        <div class="service-icon bg-gradient text-white fs-2 mb-4 mx-auto d-flex align-items-center justify-content-center rounded-circle" style="width: 80px; height: 80px;">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h3 class="fs-4 fw-semibold text-white mb-3">REST API Development</h3>
+                        <p class="text-light opacity-75 mb-0">Designing secure and efficient APIs for seamless integration between frontend and backend services.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 reveal-up" style="transition-delay: 300ms;">
+                    <div class="service-card glass-card p-5 rounded-4 h-100 text-center">
+                        <div class="service-icon bg-gradient text-white fs-2 mb-4 mx-auto d-flex align-items-center justify-content-center rounded-circle" style="width: 80px; height: 80px;">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <h3 class="fs-4 fw-semibold text-white mb-3">Admin Panel Development</h3>
+                        <p class="text-light opacity-75 mb-0">Creating intuitive, feature-rich dashboards for data management and system monitoring.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 reveal-up" style="transition-delay: 400ms;">
+                    <div class="service-card glass-card p-5 rounded-4 h-100 text-center">
+                        <div class="service-icon bg-gradient text-white fs-2 mb-4 mx-auto d-flex align-items-center justify-content-center rounded-circle" style="width: 80px; height: 80px;">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3 class="fs-4 fw-semibold text-white mb-3">Database Design</h3>
+                        <p class="text-light opacity-75 mb-0">Architecting optimized database structures in MySQL for reliable data storage and fast retrieval.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 reveal-up" style="transition-delay: 500ms;">
+                    <div class="service-card glass-card p-5 rounded-4 h-100 text-center">
+                        <div class="service-icon bg-gradient text-white fs-2 mb-4 mx-auto d-flex align-items-center justify-content-center rounded-circle" style="width: 80px; height: 80px;">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <h3 class="fs-4 fw-semibold text-white mb-3">Performance Optimization</h3>
+                        <p class="text-light opacity-75 mb-0">Analyzing and enhancing existing applications to improve speed, efficiency, and resource utilization.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Contact Section -->
+    <section id="contact" class="py-6 section-padding position-relative">
+        <div class="bg-shape-5"></div>
+        <div class="container position-relative z-1">
+            <div class="section-title text-center mb-5 reveal-up">
+                <span class="text-accent text-uppercase fw-bold tracking-widest small">Get In Touch</span>
+                <h2 class="display-5 fw-bold text-white mt-2">Contact Me</h2>
+                <div class="title-line mx-auto mt-3"></div>
+            </div>
+
+            <div class="row g-5 justify-content-center mt-4">
+                <div class="col-lg-5 reveal-left">
+                    <div class="glass-card p-5 rounded-4 h-100">
+                        <h3 class="fs-3 fw-bold text-white mb-4">Let's Talk About Your Project</h3>
+                        <p class="text-light opacity-75 mb-5">
+                            I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.
+                        </p>
+                        
+                        <div class="d-flex align-items-center gap-4 mb-4">
+                            <div class="contact-icon bg-gradient text-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 50px; height: 50px;">
+                                <i class="fas fa-phone-alt fs-5"></i>
+                            </div>
+                            <div>
+                                <span class="d-block text-light opacity-75 small fw-medium mb-1">Call Me At</span>
+                                <a href="tel:+916356239260" class="text-white fw-semibold text-decoration-none fs-5 hover-accent">+91 6356239260</a>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex align-items-center gap-4 mb-4">
+                            <div class="contact-icon bg-gradient text-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 50px; height: 50px;">
+                                <i class="fas fa-envelope fs-5"></i>
+                            </div>
+                            <div>
+                                <span class="d-block text-light opacity-75 small fw-medium mb-1">Email Me</span>
+                                <a href="mailto:rajeshjjatapara@gmail.com" class="text-white fw-semibold text-decoration-none fs-5 hover-accent">rajeshjjatapara@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex align-items-center gap-4 mb-5">
+                            <div class="contact-icon bg-gradient text-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width: 50px; height: 50px;">
+                                <i class="fas fa-map-marker-alt fs-5"></i>
+                            </div>
+                            <div>
+                                <span class="d-block text-light opacity-75 small fw-medium mb-1">Location</span>
+                                <span class="text-white fw-semibold fs-5">Ahmedabad, Gujarat</span>
+                            </div>
+                        </div>
+
+                        <div class="pt-4 border-top border-secondary border-opacity-50">
+                            <span class="d-block text-white fw-medium mb-3">Connect with me:</span>
+                            <div class="d-flex gap-3">
+                                <a href="#" class="social-link glass-btn rounded-circle d-flex align-items-center justify-content-center text-white text-decoration-none" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="social-link glass-btn rounded-circle d-flex align-items-center justify-content-center text-white text-decoration-none" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-7 reveal-right">
+                    <form class="glass-card p-5 rounded-4 contact-form h-100 d-flex flex-column justify-content-center">
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control glass-input" id="name" placeholder="Your Name" required>
+                                    <label for="name" class="text-light opacity-75">Your Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control glass-input" id="email" placeholder="Your Email" required>
+                                    <label for="email" class="text-light opacity-75">Your Email</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control glass-input" id="subject" placeholder="Subject" required>
+                                    <label for="subject" class="text-light opacity-75">Subject</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control glass-input" id="message" placeholder="Message" style="height: 150px" required></textarea>
+                                    <label for="message" class="text-light opacity-75">Message</label>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-4">
+                                <button type="submit" class="btn btn-gradient px-5 py-3 rounded-pill fw-semibold w-100 w-md-auto">
+                                    Send Message <i class="fas fa-paper-plane ms-2"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer py-4 border-top border-secondary border-opacity-25 glass-card rounded-0 mt-auto">
+        <div class="container text-center">
+            <p class="text-light opacity-75 mb-0">&copy; <span id="current-year"></span> Rajesh Jatapara. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <a href="#" id="back-to-top" class="back-to-top btn btn-gradient rounded-circle shadow-lg d-flex align-items-center justify-content-center">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.css" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
