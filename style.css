@@ -40,11 +40,14 @@ h1, h2, h3, h4, h5, h6 { color: var(--text-primary) !important; }
 p { color: var(--text-secondary) !important; }
 
 /* Base Styles */
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
     font-family: var(--font-body);
-    overflow-x: hidden;
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     min-height: 100vh;
 }

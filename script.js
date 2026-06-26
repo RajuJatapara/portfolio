@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
         window.addEventListener('load', () => {
             setTimeout(() => {
                 preloader.classList.add('loaded');
-            }, 2000);
+            }, 800);
         });
     }
 
@@ -414,7 +414,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
             typeCode();
-        }, 2500);
+        }, 1000);
     }
 
     // Contact Form Animation
