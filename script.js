@@ -417,33 +417,59 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 1000);
     }
 
-    // Contact Form Animation
+        // Contact Form Validation & WhatsApp API
     const contactForm = document.querySelector('.contact-form');
     if (contactForm) {
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
+            
+            // Check HTML5 Validation
+            if (!contactForm.checkValidity()) {
+                e.stopPropagation();
+                contactForm.classList.add('was-validated');
+                return;
+            }
+
+            // Valid Form - Send to WhatsApp
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+
             const btn = document.getElementById('submit-btn');
             const text = btn.querySelector('.btn-text');
             const spinner = btn.querySelector('.loader-spinner');
             const success = btn.querySelector('.success-msg');
             
+            // Show Loader
             text.classList.add('d-none');
             spinner.classList.remove('d-none');
             
             setTimeout(() => {
+                // Show Success
                 spinner.classList.add('d-none');
                 success.classList.remove('d-none');
                 btn.classList.add('bg-success');
                 btn.style.background = '#10b981';
-                contactForm.reset();
                 
+                // Format WhatsApp Message
+                const waText = `*New Inquiry from Portfolio!*%0A%0A*Name:* ${name}%0A*Email:* ${email}%0A*Subject:* ${subject}%0A*Message:* ${message}`;
+                const waUrl = `https://wa.me/916356239260?text=${waText}`;
+                
+                // Open WhatsApp
+                window.open(waUrl, '_blank');
+
+                contactForm.reset();
+                contactForm.classList.remove('was-validated');
+                
+                // Reset Button
                 setTimeout(() => {
                     success.classList.add('d-none');
                     text.classList.remove('d-none');
                     btn.classList.remove('bg-success');
                     btn.style.background = '';
                 }, 3000);
-            }, 2000);
+            }, 800);
         });
     }
 });

@@ -634,23 +634,13 @@
     </section>
 
         <!-- Contact Section -->
-    <section id="contact" class="py-6 section-padding position-relative">
+        <section id="contact" class="py-6 section-padding position-relative">
         <div class="bg-shape-5"></div>
         <div class="container position-relative z-1">
             <div class="section-title text-center mb-5 reveal-up">
                 <span class="text-accent text-uppercase fw-bold tracking-widest small">Get In Touch</span>
                 <h2 class="display-5 fw-bold text-white mt-2">Contact Me</h2>
                 <div class="title-line mx-auto mt-3"></div>
-            </div>
-            <div class="row justify-content-center mb-5 reveal-up">
-                <div class="col-12 text-center">
-                    <div class="glass-card d-inline-flex p-2 rounded-pill project-filters">
-                        <button class="btn btn-sm rounded-pill px-4 filter-btn active" data-filter="all">All</button>
-                        <button class="btn btn-sm rounded-pill px-4 filter-btn" data-filter="php">PHP / MVC</button>
-                        <button class="btn btn-sm rounded-pill px-4 filter-btn" data-filter="api">API</button>
-                        <button class="btn btn-sm rounded-pill px-4 filter-btn" data-filter="frontend">Frontend</button>
-                    </div>
-                </div>
             </div>
 
             <div class="row g-5 justify-content-center mt-4">
@@ -706,35 +696,41 @@
                 </div>
                 
                 <div class="col-lg-7 reveal-right">
-                    <form class="glass-card p-5 rounded-4 contact-form h-100 d-flex flex-column justify-content-center">
+                    <form class="glass-card p-5 rounded-4 contact-form h-100 d-flex flex-column justify-content-center needs-validation" novalidate>
                         <div class="row g-4">
                             <div class="col-md-6">
                                 <div class="form-floating">
                                     <input type="text" class="form-control glass-input" id="name" placeholder="Your Name" required>
                                     <label for="name" class="text-light opacity-75">Your Name</label>
+                                    <div class="invalid-feedback text-start mt-1">Please enter your name.</div>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
                                     <input type="email" class="form-control glass-input" id="email" placeholder="Your Email" required>
                                     <label for="email" class="text-light opacity-75">Your Email</label>
+                                    <div class="invalid-feedback text-start mt-1">Please enter a valid email.</div>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
                                     <input type="text" class="form-control glass-input" id="subject" placeholder="Subject" required>
                                     <label for="subject" class="text-light opacity-75">Subject</label>
+                                    <div class="invalid-feedback text-start mt-1">Please enter a subject.</div>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
                                     <textarea class="form-control glass-input" id="message" placeholder="Message" style="height: 150px" required></textarea>
                                     <label for="message" class="text-light opacity-75">Message</label>
+                                    <div class="invalid-feedback text-start mt-1">Please enter your message.</div>
                                 </div>
                             </div>
                             <div class="col-12 mt-4">
-                                <button type="submit" class="btn btn-gradient px-5 py-3 rounded-pill fw-semibold w-100 w-md-auto">
-                                    Send Message <i class="fas fa-paper-plane ms-2"></i>
+                                <button type="submit" id="submit-btn" class="btn btn-gradient px-5 py-3 rounded-pill fw-semibold w-100 w-md-auto position-relative overflow-hidden">
+                                    <span class="btn-text">Send Message <i class="fas fa-paper-plane ms-2"></i></span>
+                                    <span class="loader-spinner d-none"><i class="fas fa-circle-notch fa-spin"></i> Sending...</span>
+                                    <span class="success-msg d-none"><i class="fas fa-check-circle"></i> Sent Successfully!</span>
                                 </button>
                             </div>
                         </div>
